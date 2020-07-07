@@ -1,0 +1,319 @@
+/* font-family: 'Amiri', serif;
+font-family: 'Cinzel Decorative', cursive; */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: url("../img/BG.png") repeat center, #1a1c0f;
+}
+
+.big-container {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+/*****--------------------header-----------------*****/
+.header {
+  background: url('../img/header.png') no-repeat center, #1a1c0f;
+  background-size: 100%;
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.header {}
+
+.header__logo {}
+
+.header__title-block {
+  height: 110px;
+  color: #ffffff;
+  font-family: "Cinzel Decorative";
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 60px;
+
+}
+
+.header__title {
+  text-transform: uppercase;
+  font-family: "Cinzel Decorative";
+  font-size: 60px;
+  font-weight: 900;
+  word-spacing: 30px;
+}
+
+.header__title:after,
+.header__title:before {
+  display: inline-block;
+  content: '';
+  width: 230px;
+  height: 4px;
+  background-color: #9e885a;
+  position: relative;
+  bottom: 20px;
+  margin: 0 30px;
+
+}
+
+.header__subtitle {
+  text-transform: uppercase;
+  font-family: "Cinzel Decorative";
+  font-weight: 400;
+}
+
+.header__desc {
+  color: #cdb378;
+  font-family: "Amiri";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+  font-style: italic;
+}
+
+.header__scroll {
+  color: #cdb378;
+  font-family: "Amiri";
+  font-style: italic;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.header__scroll-title {}
+
+.header__scroll-sign {
+  font-style: normal;
+  transform: scale(1.8, 1);
+}
+
+/*****--------------------joy-----------------*****/
+.section-joy {
+  padding: 100px 0 120px;
+  background: rgb(26, 28, 15);
+  background: rgb(26, 28, 15);
+  background: linear-gradient(180deg, rgba(26, 28, 15, 0.8902163892900911) 0%, rgba(25, 27, 15, 1) 70%, rgba(20, 22, 12, 1) 100%);
+}
+
+.section-joy__title {
+  color: #ffffff;
+  font-family: "Cinzel Decorative";
+  font-size: 72px;
+  line-height: 60px;
+}
+
+.section-joy__text {
+  width: 70%;
+  color: #cdb378;
+  font-family: Amiri;
+  font-size: 24px;
+  line-height: 48px;
+  margin-top: 17px;
+}
+
+.section-joy__img {
+  position: absolute;
+  width: 30%;
+  max-height: 850px;
+  top: -35px;
+  right: 0;
+}
+
+.section-beer__img {
+  position: absolute;
+  right: calc(30% - 116px);
+  top: 60px;
+  z-index: 10;
+}
+
+/*****--------------------section-beer-----------------*****/
+.big-container {}
+
+.section-beer {
+  padding: 100px 0 100px;
+  width: 85%;
+  background: url('../img/Logo-section.png') no-repeat right top, #232615;
+}
+
+.container {}
+
+.section-beer__content {
+  width: 74.5%;
+  margin-left: 17.5%;
+  padding-right: 20%;
+  position: relative;
+}
+
+.section-beer__title {
+  color: #cdb378;
+  font-family: "Cinzel Decorative";
+  font-size: 72px;
+  line-height: 60px;
+}
+
+.section-beer__text {
+  color: #b4ba98;
+  font-family: Amiri;
+  font-size: 24px;
+  line-height: 48px;
+  margin-top: 45px;
+}
+
+.section-beer__link {
+  color: #ffffff;
+  font-family: Amiri;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-top: 50px;
+
+  border: 2px solid #404429;
+  background-color: #272a18;
+  padding: 15px 60px;
+}
+
+/*****--------------------man-----------------*****/
+.section-man {
+  position: relative;
+}
+
+.section-man__title {
+  color: #1a1c0f;
+  font-family: "Cinzel Decorative";
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 72px;
+  text-transform: uppercase;
+}
+
+.section-man__title {
+  position: absolute;
+  width: 40%;
+  top: 30%;
+  left: 60%;
+}
+
+.parallax-window {
+  min-height: 884px;
+  background: transparent;
+}
+
+/*****--------------------quality-----------------*****/
+.section-quality {  
+  position: relative;
+  z-index: 10;
+}
+
+.big-container {
+  border: 1px solid transparent;
+}
+
+.section-quality__content {
+  width: 50%;
+  margin-top: 150px;
+  position: relative;
+  position: relative;
+}
+
+.section-quality__title {
+  color: #cdb378;
+  font-family: "Cinzel Decorative";
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 72px;
+  text-transform: uppercase;
+}
+
+.section-quality__text {
+  color: #b4ba98;
+  font-family: Amiri;
+  font-size: 24px;
+  line-height: 48px;
+}
+
+.section-quality__text p {
+  margin-top: 60px;
+}
+
+.section-quality__img {
+  overflow: hidden;
+  position: absolute;
+  width: 45%;
+  max-height: 900px;
+  bottom: 0px;
+  right: -1px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-quality__img img {
+  min-height: 100%;
+  object-fit: cover;
+}
+
+/*****--------------------footer-----------------*****/
+.footer {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  height: 2750px;
+  margin: 190px 0 0;
+  background: url('../img/footer.png') no-repeat center;
+  background-size: 100%;
+}
+
+.footer:before {
+  content: '';
+  position: absolute;
+  top: -500px;
+  left: 0;
+  width: 100%;
+  height: 500px;
+  background: linear-gradient(to top, #121506, transparent);
+  z-index: 5;
+}
+
+.footer__title {
+  color: #cdb378;
+  font-family: "Cinzel Decorative";
+  font-size: 72px;
+  line-height: 80px;
+}
+
+.footer__text {
+  color: #b4ba98;
+  font-family: Amiri;
+  font-size: 24px;
+  line-height: 48px;
+  margin-top: 30px;
+}
+
+.footer__link {
+  color: #ffffff;
+  font-family: Amiri;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  border: 2px solid #404429;
+  background-color: #1a190e;
+  padding: 15px 65px;
+  margin-top: 50px;
+  transition: all .4s;
+}
+.footer__link:hover {
+  background-color: #404429;
+}
+
