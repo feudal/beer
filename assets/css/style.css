@@ -19,22 +19,30 @@ body {
   margin: 0 auto;
 }
 
+/*****--------------------parallax-----------------*****/
+.parallax-window.p10 {
+  min-height: 100vh;
+  background: transparent;
+}
+
 /*****--------------------header-----------------*****/
 .header {
-  background: url('../img/header.png') no-repeat center, #1a1c0f;
-  background-size: 100%;
+  /*   background: url('../img/header.png') no-repeat center, #1a1c0f;
+background-position: center;
+background-size: cover; */
+}
+
+.header__wrapper {
+  position: absolute;
+  left: 0;
+  top: 0;
   width: 100%;
   height: 100vh;
-
   display: flex;
   flex-flow: column;
   text-align: center;
   justify-content: space-around;
 }
-
-.header {}
-
-.header__logo {}
 
 .header__title-block {
   height: 110px;
@@ -180,6 +188,11 @@ body {
   border: 2px solid #404429;
   background-color: #272a18;
   padding: 15px 60px;
+  transition: all .3s;
+}
+
+.section-beer__link:hover {
+  background-color: #404429;
 }
 
 /*****--------------------man-----------------*****/
@@ -203,13 +216,13 @@ body {
   left: 60%;
 }
 
-.parallax-window {
+.parallax-window.p1 {
   min-height: 884px;
   background: transparent;
 }
 
 /*****--------------------quality-----------------*****/
-.section-quality {  
+.section-quality {
   position: relative;
   z-index: 10;
 }
@@ -268,10 +281,15 @@ body {
   position: relative;
   width: 100%;
   text-align: center;
-  height: 2750px;
-  margin: 190px 0 0;
-  background: url('../img/footer.png') no-repeat center;
+  height: 2000px;
+  /*   margin: 190px 0 0;
+background: url('../img/footer.png') no-repeat center; */
   background-size: 100%;
+}
+
+.parallax-window.p2 {
+  min-height: 2000px;
+  background: transparent;
 }
 
 .footer:before {
@@ -283,6 +301,12 @@ body {
   height: 500px;
   background: linear-gradient(to top, #121506, transparent);
   z-index: 5;
+}
+
+.footer__wrapper {
+  position: absolute;
+  top: 190px;
+  left: calc(50% - 500px);
 }
 
 .footer__title {
@@ -313,7 +337,7 @@ body {
   margin-top: 50px;
   transition: all .4s;
 }
+
 .footer__link:hover {
   background-color: #404429;
 }
-
